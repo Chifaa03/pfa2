@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration Dashboard</title>
+    <!-- Inclure les liens vers les fichiers CSS nécessaires pour le style -->
+    <link rel="stylesheet" href="home-admin.component.css">
+
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        
+        <img src="assets/images/images.png" alt="Study-app" class="app-logo">
+        <div class="logo">Admin Space</div>
+        
+        <div class="user-profile">
+            <span>Admin:</span>
+            <button (click)="logoutAdmin()" class="logout-button">Log Out</button>
+        </div>
+    
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        
+        <!-- Onglets de navigation -->
+        <div class="tab-buttons">
+            <button (click)="showPendingProfessors()">Professors on Hold</button>
+            <button (click)="showActiveProfessors()">Current professors</button>
+        </div>
+    
+        <!-- Contenu principal -->
+        <section class="professors">
+    
+    
+            <!-- Professeurs en attente -->
+            <div *ngIf="showPending">
+                
+                <!-- Insérez ici le contenu relatif à la gestion des professeurs en attente -->
+                <app-professeur-attente></app-professeur-attente> <!-- Composant ProfesseurAttenteComponent -->
+            </div>
+    
+            <!-- Professeurs actifs -->
+            <div *ngIf="showActive">
+            
+                <!-- Insérez ici le contenu relatif à la gestion des professeurs actifs -->
+                <!-- Exemple: <app-professeurs-actifs></app-professeurs-actifs> -->
+                <app-professeur></app-professeur>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+    
+    </footer>
+</body>
+</html>

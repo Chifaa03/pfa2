@@ -1,0 +1,137 @@
+/* Tableau de professeurs */
+.professors-table {
+    width: 90%; /* Réduire la largeur du tableau à 90% de la largeur disponible */
+    margin: 30px auto; /* Marge de 30px en haut et en bas, et marges automatiques à gauche et à droite pour centrer le tableau */
+    font-size: 8px; /* Réduire davantage la taille du texte */
+    border-collapse: collapse; /* Fusionner les bordures de cellules */
+    margin-bottom: 30px; /* Marge en bas pour l'espace entre le tableau et le contenu suivant */
+}
+
+/* En-tête du tableau */
+.professors-table .table-header {
+    background-color: #f2f2f2; /* Couleur de fond pour l'en-tête */
+    font-weight: bold; /* Texte en gras */
+}
+
+/* Ligne du tableau */
+.professors-table tr {
+    border-bottom: 1px solid #2A5287; /* Bordure inférieure pour chaque ligne */
+}
+
+/* Cellule du tableau */
+.professors-table td, .professors-table th {
+    padding: 4px; /* Espacement interne */
+    text-align: center; /* Centrer le contenu dans la cellule */
+    border: 1px solid #2A5287; /* Bordure noire pour chaque cellule */
+}
+
+/* Image du professeur */
+.professors-table .profil-image {
+    width: 25px; /* Taille de l'image réduite */
+    height: 25px; /* Taille de l'image réduite */
+    object-fit: cover; /* Conserver les proportions et couper si nécessaire */
+}
+
+/* Boutons d'action */
+.professors-table .btn-editer,
+.professors-table .btn-refuser {
+    font-size: 5px; /* Taille de la police encore plus réduite */
+    padding: 2.5px 3.5px; /* Espacement interne réduit */
+    border-radius: 3px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur de type pointeur */
+    transition: background-color 0.3s; /* Transition en douceur lors du survol */
+}
+
+/* Bouton d'édition */
+.professors-table .btn-editer {
+    font-size: 5px; /* Taille de la police encore plus réduite */
+    padding: 2.5px 3.5px; /* Espacement interne réduit */
+    border-radius: 3px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur de type pointeur */
+    transition: background-color 0.3s;
+}
+
+/* Au survol du bouton d'édition */
+.professors-table .btn-editer:hover {
+    font-size: 5px; /* Taille de la police encore plus réduite */
+    padding: 2.5px 3.5px; /* Espacement interne réduit */
+    border-radius: 3px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur de type pointeur */
+    transition: background-color 0.3s; /* Variation légèrement plus foncée de la couleur au survol */
+}
+
+/* Bouton de refus */
+.professors-table .btn-refuser {
+    font-size: 5px; /* Taille de la police encore plus réduite */
+    padding: 2.5px 3.5px; /* Espacement interne réduit */
+    border-radius: 3px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur de type pointeur */
+    transition: background-color 0.3s;
+}
+
+/* Au survol du bouton de refus */
+.professors-table .btn-refuser:hover {
+    font-size: 5px; /* Taille de la police encore plus réduite */
+    padding: 2.5px 3.5px; /* Espacement interne réduit */
+    border-radius: 3px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur de type pointeur */
+    transition: background-color 0.3s;
+}
+.edit-input {
+    font-size: 5.7px; /* Réduire la taille de la police */
+    height: 8px; /* Réduire la hauteur de l'input */
+    padding: 0.0001px; /* Réduire l'espacement interne */
+}
+/* CSS pour les boutons */
+button {
+    padding: 3px 7px; /* Réduire l'espacement autour du texte */
+    border: none; /* Supprimer la bordure par défaut */
+    border-radius: 3px; /* Ajouter une légère courbure aux coins */
+    cursor: pointer; /* Définir le curseur sur pointer pour indiquer que c'est cliquable */
+    transition: background-color 0.3s ease; /* Animation douce lors du survol */
+    font-size: 9px; 
+  }
+  
+
+  
+
+  /* Pour le bouton "Enregistrer" */
+  button.save-button {
+    padding: 3px 7px; /* Réduire l'espacement autour du texte */
+    border: none; /* Supprimer la bordure par défaut */
+    border-radius: 3px; /* Ajouter une légère courbure aux coins */
+    cursor: pointer; /* Définir le curseur sur pointer pour indiquer que c'est cliquable */
+    transition: background-color 0.3s ease; /* Animation douce lors du survol */
+    font-size: 9px; 
+  }
+  
+  /* Pour le bouton "Annuler" */
+  button.cancel-button {
+ 
+    padding: 3px 7px; /* Réduire l'espacement autour du texte */
+    border: none; /* Supprimer la bordure par défaut */
+    border-radius: 3px; /* Ajouter une légère courbure aux coins */
+    cursor: pointer; /* Définir le curseur sur pointer pour indiquer que c'est cliquable */
+    transition: background-color 0.3s ease; /* Animation douce lors du survol */
+    font-size: 9px;  }
+  
+  /* Pour le bouton "Supprimer" */
+  button.delete-button {
+    padding: 3px 7px; /* Réduire l'espacement autour du texte */
+    border: none; /* Supprimer la bordure par défaut */
+    border-radius: 3px; /* Ajouter une légère courbure aux coins */
+    cursor: pointer; /* Définir le curseur sur pointer pour indiquer que c'est cliquable */
+    transition: background-color 0.3s ease; /* Animation douce lors du survol */
+    font-size: 9px; 
+  }
+  
+  /* Pour le bouton "Editer" */
+  button.edit-button {
+    padding: 3px 7px; /* Réduire l'espacement autour du texte */
+    border: none; /* Supprimer la bordure par défaut */
+    border-radius: 3px; /* Ajouter une légère courbure aux coins */
+    cursor: pointer; /* Définir le curseur sur pointer pour indiquer que c'est cliquable */
+    transition: background-color 0.3s ease; /* Animation douce lors du survol */
+    font-size: 9px; 
+  }
+  

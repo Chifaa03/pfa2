@@ -1,0 +1,202 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 0.00001%;
+    font-family: Arial, sans-serif;
+    font-size: 8px; /* Taille de police générale plus petite */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 0.000001%;
+    margin: 0;
+    padding: 0;
+}
+
+.signup-header {
+    height: 10px; /* Réduction de la hauteur */
+    background-color: #2A5287;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px; /* Taille de la police augmentée */
+    text-align: center; /* Centrage du texte */
+    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.blue-section {
+    height: 5px; /* Réduction de la hauteur */
+    background-color: #2A5287;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.form-section {
+    background-color: #EEE;
+    padding: 5px; /* Réduction de l'espacement intérieur */
+    border-radius: 3px;
+    width: 0.10px; /* Largeur réduite */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   
+    margin: 0;
+    padding: 0;
+}
+
+.error-message {
+    color: red;
+    font-size: 6px; /* Taille de la police réduite */
+}
+
+label {
+    font-weight: bold;
+    font-size: 6px; /* Taille de la police réduite */
+}
+
+
+
+button {
+    background-color: #2A5287;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1A4067;
+}
+
+.login-message {
+    text-align: center;
+    font-size: 6px; /* Taille de la police réduite */
+    margin-bottom: 20px; /* Espacement du bas */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    width: auto;
+}
+
+.signup-header {
+    margin-top: 0;
+    height: 45px; /* Réduction de la hauteur */
+    background-color: #2A5287;
+    
+    color: #fff;
+    font-size: 10px; /* Taille de la police augmentée */
+    /* Centrage du texte */
+    text-align: center;
+    width: 100%; 
+}
+
+.blue-section {
+    height: 5px; /* Hauteur de la section bleue */
+    background-color: #2A5287;
+    display: flex;
+    align-items: center; /* Centrage vertical */
+    justify-content: center; /* Centrage horizontal */
+    color: #fff;
+    font-size: 12px; /* Taille de police */
+    font-weight: bold;
+    text-align: center; /* Centrage du texte */
+    margin-bottom: 0px; /* Espacement du bas */
+}
+
+.form-section {
+    background-color: #EEE;
+    padding: 7px; /* Réduction de l'espacement intérieur */
+    border-radius: 5px;
+    width: 300px; /* Largeur réduite */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 0px; /* Espacement du haut */
+    margin-bottom: 0px; /* Espacement du bas */
+}
+
+.error-message {
+    color: red;
+    font-size: 6px; /* Taille de la police réduite */
+}
+
+.form-group {
+    margin-bottom: 5px; /* Réduction de la marge entre les groupes */
+}
+
+label {
+    font-weight: bold;
+    font-size: 6px; /* Taille de la police réduite */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+button {
+    width: calc(100% - 15px); /* Largeur des champs de saisie ajustée */
+    padding: 5px; /* Réduction de l'espacement intérieur */
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 5px; /* Réduction de la marge entre les éléments */
+    font-size: 6px; /* Taille de la police réduite */
+}
+
+button {
+    background-color: #2A5287;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1A4067;
+}
+
+.login-message {
+    text-align: center;
+    font-size: 6px; /* Taille de la police réduite */
+    margin-bottom: 20px; /* Espacement du bas */
+}
+
+.role-options {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.role-options option {
+    font-size: 7px;
+}
+.role-options select option {
+    font-size: 7px; /* Taille de police pour toutes les options */
+}
+
+.role-options select {
+    font-size: 7px; /* Taille de police par défaut */
+}
+
+.role-options select.instructor-selected {
+    font-size: 7px; /* Taille de police pour l'option "Instructor" */
+}
+
+
+
+
+
+
+
+
+

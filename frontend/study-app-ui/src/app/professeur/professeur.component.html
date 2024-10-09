@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<section class="professors">
+  <table class="professors-table">
+      <thead>
+          <tr>
+              <th>First name</th>
+              <th>Last name</th>
+              <th>Email</th>
+              <th>Phone Number</th>
+              <th>Birthday</th>
+              <th>Speciality</th>
+              <th>Picture</th>
+              <th>Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let professeur of professeurs; let i = index">
+              <td>
+                  <span *ngIf="!editMode[i]">{{ professeur.firstName }}</span>
+                  <input *ngIf="editMode[i]" type="text" [(ngModel)]="professeur.firstName" class="edit-input">
+              </td>
+              <td>
+                  <span *ngIf="!editMode[i]">{{ professeur.lastName }}</span>
+                  <input *ngIf="editMode[i]" type="text" [(ngModel)]="professeur.lastName" class="edit-input">
+              </td>
+              <td>
+                  <span *ngIf="!editMode[i]">{{ professeur.email }}</span>
+                  <input *ngIf="editMode[i]" type="text" [(ngModel)]="professeur.email" class="edit-input">
+              </td>
+              <td>
+                  <span *ngIf="!editMode[i]">{{ professeur.phoneNumber }}</span>
+                  <input *ngIf="editMode[i]" type="text" [(ngModel)]="professeur.phoneNumber" class="edit-input">
+              </td>
+              <td>
+                  <span *ngIf="!editMode[i]">{{ professeur.birthday }}</span>
+                  <input *ngIf="editMode[i]" type="text" [(ngModel)]="professeur.birthday" class="edit-input">
+              </td>
+              
+                <td>
+                  <span *ngIf="!editMode[i]">{{ professeur.speciality }}</span>
+                  <input *ngIf="editMode[i]" type="text" [(ngModel)]="professeur.speciality" class="edit-input">
+              </td>
+              
+                  <td>
+                    <span *ngIf="!editMode[i]"><img [src]="professeur.pictureUrl" class="profil-image" alt="Photo du professeur en attente"></span>
+                    <span *ngIf="editMode[i]"><img [src]="professeur.pictureUrl" class="profil-image" alt="Photo du professeur en attente" (click)="openFileInput(i)"></span>
+                    <input type="file" #fileInput id="fileInput-{{i}}" style="display: none" accept="image/*" (change)="onFileSelected($event, i)">
+
+                </td>
+                
+            
+            
+              <td>
+                
+                  <button *ngIf="!editMode[i]" type="button" (click)="toggleEditMode(i)" class="edit-button"><a class="edit-btn"><i class="fas fa-edit"></i></a></button>
+                  <button *ngIf="editMode[i]" type="button" (click)="saveChanges(i)" class="save-button" class="save-btn"><i class="fas fa-save"></i></button>
+                  <button *ngIf="editMode[i]" type="button" (click)="cancelEdit(i)" class="cancel-button" class="cancel-btn"><i class="fas fa-times-circle"></i></button>
+                  <button *ngIf="!editMode[i]" (click)="supprimerProfesseur(professeur.id)" type="button" class="delete-button"><a class="delete-btn"><i class="fas fa-trash-alt"></i></a></button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</section>

@@ -1,0 +1,96 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 10px; /* Taille de police générale plus petite */
+}
+
+.container {
+    height: 100vh; /* Utilise la hauteur de la fenêtre comme hauteur de la page */
+    display: flex;
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+}
+
+.login-header {
+    position: absolute; /* Position absolue par rapport au parent */
+    top: 0; /* Place l'élément en haut de la page */
+    left: 0; /* Place l'élément tout à gauche */
+    width: 100%; /* Utilise toute la largeur de la page */
+    height: 40px;
+    background-color: #2A5287;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem; /* Taille de police légèrement plus petite */
+}
+
+.blue-section {
+    height: 150px;
+    background-color: #2A5287;
+    margin-top: 50px; /* Ajoute un espace égal à la hauteur de .login-header */
+}
+
+.form-section {
+    background-color: #EEE;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 1.2rem; /* Taille de police légèrement plus petite */
+    max-width: 200px; /* Largeur maximale du formulaire */
+    width: 100%; /* Assure que le formulaire reste réactif */
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 0.6rem; /* Taille de police légèrement plus petite */
+}
+
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 6px; /* Réduction du rembourrage */
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 0.55rem; /* Taille de police légèrement plus petite */
+}
+
+button {
+    width: 100%; /* Remplit la largeur du conteneur parent */
+    margin-top: 10px; /* Ajoute un peu d'espace au-dessus du bouton */
+    font-size: 0.75rem; /* Taille de police légèrement plus petite */
+    background-color: #2A5287; /* Couleur de fond bleue */
+    color: #fff; /* Couleur du texte blanc */
+    border: none; /* Supprime la bordure du bouton */
+    padding: 8px 16px; /* Ajoute un peu de rembourrage horizontal */
+    border-radius: 3px; /* Ajoute un peu de bord arrondi */
+    transition: background-color 0.3s, color 0.3s; /* Ajoute une transition fluide */
+}
+
+button:hover {
+    background-color: #1C3A5F; /* Couleur de fond légèrement plus foncée au survol */
+}
+
+
+
+.signup-message {
+    margin-top: 220px;
+    text-align: center;
+    font-size: 0.5rem; /* Taille de police légèrement plus petite */
+    position: absolute; /* Position absolue par rapport au parent */
+    top: 15%; /* Place le haut de l'élément au milieu de la page */
+    left: 48%; /* Place la gauche de l'élément au milieu de la page */
+    transform: translate(-50%, -50%); /* Centre l'élément horizontalement et verticalement */
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+    font-size: 1.4rem; /* Taille de police légèrement plus petite */
+    margin-top: 5px;
+}

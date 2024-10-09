@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<section class="professors">
+  <table class="professors-table">
+      <thead>
+          <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Birthday</th>
+            <th>Speciality</th>
+            <th>Picture</th>
+            <th>Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let professeur of professeursAttente">
+              <td>
+                  <span >{{ professeur.firstName }}</span>
+                
+              </td>
+              <td>
+                  <span >{{ professeur.lastName }}</span>
+               
+              </td>
+              <td>
+                  <span >{{ professeur.email }}</span>
+                 
+              </td>
+              <td>
+                  <span >{{ professeur.phoneNumber }}</span>
+                  
+              </td>
+              <td>
+                  <span >{{ professeur.birthday }}</span>
+                  
+              </td>
+              <td>
+                  <span >{{ professeur.speciality }}</span>
+              
+              </td>
+              <td>
+                  <img [src]="professeur.pictureUrl" class="profil-image" alt="Photo du professeur en attente">
+              </td>
+              <td>
+                  <button (click)="accepterProfesseur(professeur.id)" class="approuver-button" class="approve-btn"><i class="fas fa-check"></i></button>
+            
+                  <button (click)="supprimerProfesseurA(professeur.id)"class="delete-button" class="delete-btn"><i class="fas fa-trash-alt"></i></button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</section>
